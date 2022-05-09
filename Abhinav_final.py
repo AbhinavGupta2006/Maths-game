@@ -1,4 +1,4 @@
-'''This is a maths game for four different operations'''
+'''This is a maths game with four different operations'''
 
 '''PREREQUISITES:
   -A text file named game__name
