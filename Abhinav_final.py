@@ -1,9 +1,5 @@
 '''This is a maths game with four different operations'''
 
-'''PREREQUISITES:
-  -A text file named game__name
-  -A text file named game__score with 0 written in it'''
-
 
 import random
 
@@ -25,17 +21,26 @@ def intro():
     firstQuery=input('Check highscore[H], Display name of player[D], New game[N]\n')
 
     if firstQuery.upper()=='H':
-        s=open('game__score.txt','r')
-        sr=s.read()
-        print('highscore:',sr)
-        s.close()
-
+        try:
+            s=open('game__score.txt','r')
+            sr=s.read()
+            print('highscore:',sr)
+            s.close()
+        except IOError:
+            s=open('game__score.txt','w')
+            s.write('0')
+            s.close()
+            print('highscore: 0')
     elif firstQuery.upper()=='D':
-        n=open('game__name.txt','r')
-        nr=n.read()
-        print('highest scoring player:',nr)
-        n.close()
-
+        try:
+            n=open('game__name.txt','r')
+            nr=n.read()
+            print('highest scoring player:',nr)
+            n.close()
+        except IOError:
+            n=open('game__name.txt','w')
+            n.close()
+            print('highest scoring player: ')
     elif firstQuery.upper()=='N':
         ask()
 
@@ -62,11 +67,15 @@ def Sum():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1+num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -102,11 +111,15 @@ def Sum():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1+num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -142,11 +155,15 @@ def Sum():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1+num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -191,11 +208,15 @@ def Multiply():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1*num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -231,11 +252,15 @@ def Multiply():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1*num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -271,11 +296,15 @@ def Multiply():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1*num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -320,11 +349,15 @@ def Subtraction():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1-num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -360,11 +393,15 @@ def Subtraction():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1-num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -400,11 +437,15 @@ def Subtraction():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1-num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -449,11 +490,15 @@ def Division():
                         print("\n")
                     else:
                         print("Wrong.\t correct answer is", num1/num2)
-                        #print("\n")
                         print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -490,11 +535,15 @@ def Division():
                             print("\n")
                         else:
                             print("Wrong.\t correct answer is", num1/num2)
-                            #print("\n")
                             print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
@@ -531,11 +580,15 @@ def Division():
                             print("\n")
                         else:
                             print("Wrong.\t correct answer is", num1/num2)
-                            #print("\n")
                             print('score: ',score)
-                        s=open('game__score.txt','r')
-                        sr=s.read()
-                        s.close()
+                        try:
+                            s=open('game__score.txt','r')
+                            sr=s.read()
+                            s.close()
+                        except IOError:
+                            s=open('game__score.txt','w')
+                            sr=0
+                            s.close()
                         if score>int(sr):
                             n=open('game__name.txt','w')
                             nw=n.write(name)
