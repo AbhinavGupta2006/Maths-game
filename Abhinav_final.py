@@ -55,8 +55,8 @@ def Sum():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(1,10)
-                num2=random.randint(1,10)
+                num1=random.randint(1,9)
+                num2=random.randint(1,9)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter sum:")
@@ -99,8 +99,8 @@ def Sum():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(10,100)
-                num2=random.randint(10,100)
+                num1=random.randint(10,99)
+                num2=random.randint(10,99)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter sum:")
@@ -143,8 +143,8 @@ def Sum():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(100,1000)
-                num2=random.randint(100,1000)
+                num1=random.randint(100,999)
+                num2=random.randint(100,999)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter sum:")
@@ -196,8 +196,8 @@ def Multiply():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(1,10)
-                num2=random.randint(1,10)
+                num1=random.randint(1,9)
+                num2=random.randint(1,9)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter product of numbers:")
@@ -240,8 +240,8 @@ def Multiply():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(10,100)
-                num2=random.randint(10,100)
+                num1=random.randint(10,99)
+                num2=random.randint(10,99)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter product of numbers:")
@@ -284,8 +284,8 @@ def Multiply():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(100,1000)
-                num2=random.randint(100,1000)
+                num1=random.randint(100,999)
+                num2=random.randint(100,999)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter product of numbers:")
@@ -337,8 +337,8 @@ def Subtraction():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(1,10)
-                num2=random.randint(1,10)
+                num1=random.randint(1,9)
+                num2=random.randint(1,9)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter subtraction (num1-num2)):")
@@ -381,8 +381,8 @@ def Subtraction():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(10,100)
-                num2=random.randint(10,100)
+                num1=random.randint(10,99)
+                num2=random.randint(10,99)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter subtraction (num1-num2):")
@@ -425,8 +425,8 @@ def Subtraction():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(100,1000)
-                num2=random.randint(100,1000)
+                num1=random.randint(100,999)
+                num2=random.randint(100,999)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter subtraction (num1-num2):")
@@ -478,8 +478,8 @@ def Division():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(1,10)
-                num2=random.randint(1,10)
+                num1=random.randint(1,9)
+                num2=random.randint(1,9)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter division of numbers(n1/n2):")
@@ -522,8 +522,8 @@ def Division():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(10,100)
-                num2=random.randint(10,100)
+                num1=random.randint(10,99)
+                num2=random.randint(10,99)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter division of numbers(n1/n2):")
@@ -567,8 +567,8 @@ def Division():
             score=0
             name=input("Enter player's name: ")
             while True:
-                num1=random.randint(100,1000)
-                num2=random.randint(100,1000)
+                num1=random.randint(100,999)
+                num2=random.randint(100,999)
                 print("num1=",num1)
                 print("num2=",num2)
                 ans=input("Enter division of numbers(n1/n2):")
